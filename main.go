@@ -2,13 +2,18 @@ package main
 
 import "fmt"
 
-func Texte(mot, mot1 string) string {
-	return mot + " " + mot1
+type adresse struct {
+	rue    string
+	numero int
 }
 
 func main() {
 
-	phrase := Texte("yacine", "norhane")
-	fmt.Println(phrase)
+	commande := adresse{
+		rue:    "17 rue victor hugo",
+		numero: 17,
+	}
+
+	fmt.Println(commande.numero)
 
 }
